@@ -5,11 +5,7 @@ const CategoryItem = ({ category }) => {
 
   return (
     <div className='category-container'>
-      <div
-        className='category-background'
-        style={{
-          backgroundImage: `url(${imageUrl})`
-      }} />
+      <div className='category-background' style={{backgroundImage: `url(${imageUrl})`}} />
       <div className='category-body'>
         <h2>{title}</h2>
         <p>Shop now</p>
