@@ -1,26 +1,6 @@
-export const CATEGORIES_ACTION_TYPE = {
-  SET_CATEGORIES: 'categories/SET_CATEGORIES',
-};
+import { CATEGORIES_INITIAL_STATE, CATEGORIES_ACTION_TYPE } from "./categories.types";
 
-export const selectCategoriesMap = (state) => {
-  const categoriesMap = state.categories.categories.reduce((acc, category) => {
-    const { title, items } = category;
-    acc[title.toLowerCase()] = items;
-    return acc;
-  },{});
-
-  return categoriesMap;
-};
-
-export const setCategories = (categories) => (
-  { type: CATEGORIES_ACTION_TYPE.SET_CATEGORIES, payload: categories }
-);
-
-const INITIAL_STATE = {
-  categories: []
-};
-
-export const categoriesReducer = (state = INITIAL_STATE, action = {}) => {
+export const categoriesReducer = (state = CATEGORIES_INITIAL_STATE, action = {}) => {
   const { type, payload } = action
 
   switch (type) {

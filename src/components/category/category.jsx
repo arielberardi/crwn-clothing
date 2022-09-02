@@ -2,7 +2,7 @@ import { useEffect, useState, Fragment } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 
-import { selectCategoriesMap } from '../../store/categories/categories.reducer';
+import { selectCategoriesMap } from '../../store/categories/categories.selector';
 import ProductCard from '../product-card/product-card';
 
 import { CategoryContainer, Title } from './category.style';

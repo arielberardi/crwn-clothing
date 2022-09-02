@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 
 import { createUserDocumentFromAuth, onAuthStateChangedListener } from "./services/firebase/firebase";
-import { setCurrentUser } from "./store/user/user.reducer";
+import { setCurrentUser } from "./store/user/user.action";
+
 import Navigation from './routes/navigation/navigation';
 import Home from './routes/home/home';
 import Authentication from './routes/authentication/authentication';
