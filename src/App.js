@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
 
-import { createUserDocumentFromAuth, onAuthStateChangedListener } from "./services/firebase/firebase";
-import { setCurrentUser } from "./store/user/user.action";
+import { createUserDocumentFromAuth, onAuthStateChangedListener } from './services/firebase/firebase';
+import { setCurrentUser } from './store/user/user.action';
 
 import Navigation from './routes/navigation/navigation';
 import Home from './routes/home/home';

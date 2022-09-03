@@ -1,4 +1,4 @@
-import { CART_INITIAL_STATE, CART_ACTION_TYPE } from "./cart.types";
+import { CART_INITIAL_STATE, CART_ACTION_TYPE } from './cart.types';
 
 export const cartReducer = (state = CART_INITIAL_STATE, action = {}) => {
   const { type, payload } = action;

@@ -1,4 +1,4 @@
-import { CART_ACTION_TYPE } from "./cart.types";
+import { CART_ACTION_TYPE } from './cart.types';
 
 const addCartItem = (cartItems, item) => {
   const existingCartItem = cartItems.find((cartItem) => cartItem.id === item.id );

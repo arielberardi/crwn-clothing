@@ -6,12 +6,12 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'fire
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyArCnc5y7Od1X6kQ-4z7SDlNu74b32Ftmw",
-  authDomain: "crwn-db-fec8a.firebaseapp.com",
-  projectId: "crwn-db-fec8a",
-  storageBucket: "crwn-db-fec8a.appspot.com",
-  messagingSenderId: "424608635080",
-  appId: "1:424608635080:web:cf26cc9a3b3a246724edfd"
+  apiKey: 'AIzaSyArCnc5y7Od1X6kQ-4z7SDlNu74b32Ftmw',
+  authDomain: 'crwn-db-fec8a.firebaseapp.com',
+  projectId: 'crwn-db-fec8a',
+  storageBucket: 'crwn-db-fec8a.appspot.com',
+  messagingSenderId: '424608635080',
+  appId: '1:424608635080:web:cf26cc9a3b3a246724edfd'
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -70,7 +70,7 @@ export const addCollectionAndDocuments = async (collectionKey, objects, fieldKey
   });
 
   await batch.commit();
-  console.log("done");
+  console.log('done');
 }
 
 export const getCategoriesAndDocuments = async () => {
