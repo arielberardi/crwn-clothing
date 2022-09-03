@@ -1,7 +1,11 @@
 export const CATEGORIES_INITIAL_STATE = {
-  categories: []
+  categories: [],
+  isLoading: false,
+  error: null
 };
 
 export const CATEGORIES_ACTION_TYPE = {
-  SET_CATEGORIES: 'categories/SET_CATEGORIES',
+  FETCH_CATEGORIES_START: 'categories/FETCH_CATEGORIES_START',
+  FETCH_CATEGORIES_SUCCESS: 'categories/FETCH_CATEGORIES_SUCCESS',
+  FETCH_CATEGORIES_FAILED: 'categories/FETCH_CATEGORIES_FAILED'
 };
