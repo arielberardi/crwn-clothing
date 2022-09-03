@@ -8,7 +8,7 @@ https://udemy.com/course/complete-react-developer-zero-to-mastery/
 - States and Context
 - Styled Components
 - Reducers
-- Redux with persist
+- Redux (persist, thunk, saga)
 
 ## Currrent features:
 - SignUp/SignIn/Out (firebase)
