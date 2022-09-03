@@ -20,7 +20,7 @@ const composeEnhancer =
 
 const composeEnhancers = composeEnhancer(applyMiddleware(...middleWares));
 
-const persistConfig = { key: 'root', storage, blacklist: ['user'] };
+const persistConfig = { key: 'root', storage, whitelist: ['cart'] };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = createStore(persistedReducer, undefined, composeEnhancers);
